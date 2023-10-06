@@ -9,7 +9,7 @@ public class BankAccount {
     BankAccount(double accountBalance){
         this.balance=accountBalance;
     }
-    double getAccountBalance() {
+    public double getAccountBalance() {
         return balance;
     }
     public void setAccountBalance(double accountBalance) {
