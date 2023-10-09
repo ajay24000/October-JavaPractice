@@ -4,6 +4,18 @@ import java.util.Arrays;
 
 public class MergeSortingAlgo implements SortingAlgorithm {
 
+    @Override
+    public  void mergeSort(int[] arr ,int left ,int right) {
+        if (left < right) {
+
+            int mid = (left + right) / 2;
+
+            mergeSort(arr, left, mid);
+            mergeSort(arr, mid + 1, right);
+
+            merge(arr, left, mid, right);
+        }
+    }
     public void merge(int[] arr, int p, int q, int r) {
 
         int n1 = q - p + 1;
@@ -49,35 +61,14 @@ public class MergeSortingAlgo implements SortingAlgorithm {
 
     }
 
-    /**
-     * @param arr
-     */
     @Override
     public void bubbleSort(int[] arr) {
 
     }
 
-    /**
-     * @param arr
-     * @param start
-     * @param end
-     */
     @Override
     public void quickSort(int[] arr, int start, int end) {
 
-    }
-
-    @Override
-    public  void mergeSort(int[] arr ,int left ,int right) {
-        if (left < right) {
-
-            int mid = (left + right) / 2;
-
-            mergeSort(arr, left, mid);
-            mergeSort(arr, mid + 1, right);
-
-            merge(arr, left, mid, right);
-        }
     }
 
     public static void main(String[] args) {

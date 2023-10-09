@@ -16,21 +16,11 @@ public class BubbleSortingAlgo implements SortingAlgorithm {
             }
         }
 
-    /**
-     * @param arr
-     * @param start
-     * @param end
-     */
     @Override
     public void quickSort(int[] arr, int start, int end) {
 
     }
 
-    /**
-     * @param arr
-     * @param left
-     * @param right
-     */
     @Override
     public void mergeSort(int[] arr, int left, int right) {
 
@@ -41,7 +31,7 @@ public class BubbleSortingAlgo implements SortingAlgorithm {
             int[] arr = {64, 34, 25, 12, 22, 11, 90};
             bubblesort.bubbleSort(arr);
             for(int i=0 ; i<arr.length ; i++) {
-                System.out.println(arr[i]);
+                System.out.print(arr[i]+" ");
             }
         }
 

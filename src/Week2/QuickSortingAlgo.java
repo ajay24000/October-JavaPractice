@@ -20,14 +20,6 @@ public class QuickSortingAlgo implements SortingAlgorithm {
         return (i + 1);
     }
 
-    /**
-     * @param arr
-     */
-    @Override
-    public void bubbleSort(int[] arr) {
-
-    }
-
     @Override
     public void quickSort(int[] arr, int start, int end) {
         if (start < end) {
@@ -37,11 +29,10 @@ public class QuickSortingAlgo implements SortingAlgorithm {
         }
     }
 
-    /**
-     * @param arr
-     * @param left
-     * @param right
-     */
+    @Override
+    public void bubbleSort(int[] arr) {
+
+    }
     @Override
     public void mergeSort(int[] arr, int left, int right) {
 

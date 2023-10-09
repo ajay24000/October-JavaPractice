@@ -31,12 +31,12 @@ class Rectangle2 extends Shape7 {
     public void calculateArea1(Shape8 obj) {
 
         double area1 = obj.length * obj.breadth ;
-        System.out.println(area1);
+        System.out.println("Area of Rectangle: "+area1);
     }
     @Override
     public void calculatePerimeter1(Shape8 obj) {
         double perimeter1 = 2 * (obj.length + obj.breadth);
-        System.out.println(perimeter1);
+        System.out.println("Perimeter of Rectangle: "+perimeter1);
     }
 
 }
