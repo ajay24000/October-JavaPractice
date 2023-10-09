@@ -15,7 +15,7 @@ public class Customer {
         this.customerName = customerName;
     }
 
-    public void printDetails() {
+    public void printData() {
         System.out.println("Customer Name:  " + customerName);
     }
 }
