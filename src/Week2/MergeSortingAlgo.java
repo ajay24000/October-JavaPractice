@@ -5,6 +5,10 @@ import java.util.Arrays;
 public class MergeSortingAlgo implements SortingAlgorithm {
 
     @Override
+    public int[] sortingAlgorithm(int[] arr) {
+        mergeSort(arr,0,arr.length-1);
+        return arr;
+    }
     public  void mergeSort(int[] arr ,int left ,int right) {
         if (left < right) {
 
@@ -58,16 +62,6 @@ public class MergeSortingAlgo implements SortingAlgorithm {
             j++;
             k++;
         }
-
-    }
-
-    @Override
-    public void bubbleSort(int[] arr) {
-
-    }
-
-    @Override
-    public void quickSort(int[] arr, int start, int end) {
 
     }
 

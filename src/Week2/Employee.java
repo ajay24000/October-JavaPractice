@@ -1,27 +1,27 @@
 package Week2;
 
 public abstract class Employee {
-    String name;
-    double salary;
-    public Employee(String name , double salary) {
-        this.name = name;
-        this.salary = salary;
+    private String name;
+    private double salary;
+    public Employee(String EmployeeName , double EmployeeSalary) {
+        this.name = EmployeeName;
+        this.salary = EmployeeSalary;
     }
 
     public String getEmployeeName() {
         return name;
     }
 
-    public void setEmployeeName(String name) {
-        this.name = name;
+    public void setEmployeeName(String EmployeeName) {
+        this.name = EmployeeName;
     }
 
     public double getEmployeeSalary() {
         return salary;
     }
 
-    public void setEmployeeSalary(double salary) {
-        this.salary = salary;
+    public void setEmployeeSalary(double EmployeeSalary) {
+        this.salary = EmployeeSalary;
     }
     abstract double calculateSalary();
 

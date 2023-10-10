@@ -1,6 +1,6 @@
 package Week2;
 
-public class QuickSortingAlgo implements SortingAlgorithm {
+class QuickSortingAlgo implements SortingAlgorithm {
 
     int partition (int[] a, int start, int end) {
         int pivot = a[end]; // pivot element
@@ -21,23 +21,18 @@ public class QuickSortingAlgo implements SortingAlgorithm {
     }
 
     @Override
-    public void quickSort(int[] arr, int start, int end) {
+    public int[] sortingAlgorithm(int[] arr) {
+        quickSort(arr,0,arr.length-1);
+        return arr;
+    }
+
+    private void quickSort(int[] arr, int start, int end) {
         if (start < end) {
             int p = partition(arr, start, end);  //p is partitioning index
             quickSort(arr, start, p - 1);
             quickSort(arr, p + 1, end);
         }
     }
-
-    @Override
-    public void bubbleSort(int[] arr) {
-
-    }
-    @Override
-    public void mergeSort(int[] arr, int left, int right) {
-
-    }
-
     public static void main(String[] args) {
         int[] arr = { 13, 18, 27, 2, 19, 25 };
         int n = arr.length;

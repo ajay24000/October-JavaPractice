@@ -2,57 +2,58 @@ package Week2;
 
 import java.lang.Math;
 
-class Shape8 {
-    double radius;
-    double length;
-    double breadth;
-}
-public abstract class Shape7 {
-    public abstract void calculatePerimeter1(Shape8 obj);
+abstract class Shape7 {
+    public abstract void calculatePerimeter1();
 
-    public abstract void calculateArea1(Shape8 obj);
+    public abstract void calculateArea1();
 
 }
 class Circle2 extends Shape7 {
-    @Override
-    public void calculateArea1(Shape8 obj) {
-        double area  = Math.PI * obj.radius * obj.radius;
+
+    private double radius;
+    Circle2(double radius) {
+        this.radius = radius;
+    }
+    public void calculateArea1() {
+        double area  = Math.PI * radius * radius;
         System.out.println("Area of Circle: "+area);
     }
-    @Override
-    public void calculatePerimeter1(Shape8 obj) {
-        double perimeter = 2 * Math.PI * obj.radius;
+
+    public void calculatePerimeter1() {
+        double perimeter = 2 * Math.PI * radius;
         System.out.println("Perimeter of Circle: "+perimeter);
     }
 }
 
 class Rectangle2 extends Shape7 {
-    @Override
-    public void calculateArea1(Shape8 obj) {
 
-        double area1 = obj.length * obj.breadth ;
+    private double length;
+    private double breadth;
+    Rectangle2 (double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public void calculateArea1() {
+
+        double area1 = length * breadth ;
         System.out.println("Area of Rectangle: "+area1);
     }
-    @Override
-    public void calculatePerimeter1(Shape8 obj) {
-        double perimeter1 = 2 * (obj.length + obj.breadth);
+
+    public void calculatePerimeter1() {
+        double perimeter1 = 2 * (length + breadth);
         System.out.println("Perimeter of Rectangle: "+perimeter1);
     }
 
 }
 class Main1 {
     public static void main(String[] args) {
-        Shape8 obj3 = new Shape8();
-        Shape8 obj4 = new Shape8();
-        obj3.radius = 5;
-        obj4.breadth = 6;
-        obj4.length = 4;
 
-        Circle2 circle = new Circle2();
-        circle.calculateArea1(obj3);
-        circle.calculatePerimeter1(obj3);
-        Rectangle2 rectangle = new Rectangle2();
-        rectangle.calculateArea1(obj4);
-        rectangle.calculatePerimeter1(obj4);
+        Circle2 circle = new Circle2(5);
+        circle.calculateArea1();
+        circle.calculatePerimeter1();
+        Rectangle2 rectangle = new Rectangle2(4,6);
+        rectangle.calculateArea1();
+        rectangle.calculatePerimeter1();
     }
 }

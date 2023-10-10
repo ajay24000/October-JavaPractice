@@ -1,8 +1,8 @@
 package Week2;
 
-public class BubbleSortingAlgo implements SortingAlgorithm {
+class BubbleSortingAlgo implements SortingAlgorithm {
         @Override
-        public  void bubbleSort(int[] arr) {
+        public  int[] sortingAlgorithm(int[] arr) {
             int n = arr.length;
 
             for (int i = 0; i < n - 1; i++) {
@@ -14,22 +14,14 @@ public class BubbleSortingAlgo implements SortingAlgorithm {
                     }
                 }
             }
+            return arr;
         }
 
-    @Override
-    public void quickSort(int[] arr, int start, int end) {
-
-    }
-
-    @Override
-    public void mergeSort(int[] arr, int left, int right) {
-
-    }
 
     public static void main(String[] args) {
             BubbleSortingAlgo bubblesort = new BubbleSortingAlgo();
             int[] arr = {64, 34, 25, 12, 22, 11, 90};
-            bubblesort.bubbleSort(arr);
+            bubblesort.sortingAlgorithm(arr);
             for(int i=0 ; i<arr.length ; i++) {
                 System.out.print(arr[i]+" ");
             }
