@@ -16,12 +16,12 @@ class Circle2 extends Challenge7 {
     }
     public void calculateArea1() {
         double area  = Math.PI * radius * radius;
-        System.out.println("Area of Circle: "+area);
+        System.out.println("Area of Circle is: "+area);
     }
 
     public void calculatePerimeter1() {
         double perimeter = 2 * Math.PI * radius;
-        System.out.println("Perimeter of Circle: "+perimeter);
+        System.out.println("Perimeter of Circle is: "+perimeter);
     }
 }
 
@@ -37,12 +37,12 @@ class Rectangle2 extends Challenge7 {
     public void calculateArea1() {
 
         double area1 = length * breadth ;
-        System.out.println("Area of Rectangle: "+area1);
+        System.out.println("Area of Rectangle is: "+area1);
     }
 
     public void calculatePerimeter1() {
         double perimeter1 = 2 * (length + breadth);
-        System.out.println("Perimeter of Rectangle: "+perimeter1);
+        System.out.println("Perimeter of Rectangle is: "+perimeter1);
     }
 
 }

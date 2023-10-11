@@ -137,9 +137,9 @@ public class Challenge8 {
         SortingAlgorithm quickSort = new QuickSortingAlgo();
         int[] sortedByQuickSort = quickSort.sortingAlgorithm(unsortedArray);
 
-        System.out.println("Sorting array using Bubble Sort: " + Arrays.toString(sortedByBubbleSort));
-        System.out.println("Sorting array using Merge Sort: " + Arrays.toString(sortedByMergeSort));
-        System.out.println("Sorting array using Quick Sort: " + Arrays.toString(sortedByQuickSort));
+        System.out.println("Sorting using Bubble Sort: " + Arrays.toString(sortedByBubbleSort));
+        System.out.println("Sorting using Merge Sort: " + Arrays.toString(sortedByMergeSort));
+        System.out.println("Sorting using Quick Sort: " + Arrays.toString(sortedByQuickSort));
     }
 
 }

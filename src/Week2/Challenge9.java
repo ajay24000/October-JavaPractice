@@ -47,7 +47,7 @@ class FileLogging implements Logger {
 
     @Override
     public void logError(String message) {
-        logToFile("ERROR: " + message);
+        logToFile("Error: " + message);
     }
 
     private void logToFile(String logMessage) {
