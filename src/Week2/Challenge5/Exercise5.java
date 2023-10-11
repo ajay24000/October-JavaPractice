@@ -32,7 +32,7 @@ public class Exercise5 {
             Product product = new Product(productName, productPrice);
             shoppingCart.addProduct(product);
 
-            System.out.print("Do you want to add more products? (y/n): ");
+            System.out.print("Do you want  add more products? (y/n): ");
             addMoreProducts = scanner.nextLine().charAt(0);
 
         } while (addMoreProducts == 'y' || addMoreProducts == 'Y');
