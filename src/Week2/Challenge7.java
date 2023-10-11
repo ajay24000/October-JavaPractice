@@ -2,13 +2,13 @@ package Week2;
 
 import java.lang.Math;
 
-abstract class Shape7 {
+abstract class Challenge7 {
     public abstract void calculatePerimeter1();
 
     public abstract void calculateArea1();
 
 }
-class Circle2 extends Shape7 {
+class Circle2 extends Challenge7 {
 
     private double radius;
     Circle2(double radius) {
@@ -25,7 +25,7 @@ class Circle2 extends Shape7 {
     }
 }
 
-class Rectangle2 extends Shape7 {
+class Rectangle2 extends Challenge7 {
 
     private double length;
     private double breadth;
