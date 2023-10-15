@@ -49,10 +49,10 @@ class Rectangle2 extends Challenge7 {
 class Main1 {
     public static void main(String[] args) {
 
-        Circle2 circle = new Circle2(5);
+        Challenge7 circle = new Circle2(5);
         circle.calculateArea1();
         circle.calculatePerimeter1();
-        Rectangle2 rectangle = new Rectangle2(4,6);
+        Challenge7 rectangle = new Rectangle2(4,6);
         rectangle.calculateArea1();
         rectangle.calculatePerimeter1();
     }

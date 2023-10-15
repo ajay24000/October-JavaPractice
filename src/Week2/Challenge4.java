@@ -28,13 +28,13 @@ public class Challenge4 {
 
     public static void main(String[] args) {
 
-        Circle1 circle = new Circle1();
+        Drawable circle = new Circle1();
         circle.draw();
 
-        Rectangle1 rectangle = new Rectangle1();
+        Drawable rectangle = new Rectangle1();
         rectangle.draw();
 
-        Triangle1 triangle = new Triangle1();
+        Drawable triangle = new Triangle1();
         triangle.draw();
     }
 }

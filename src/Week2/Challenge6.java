@@ -45,9 +45,9 @@ class Developer extends Employee {
 }
 public class Challenge6 {
     public static void main(String[] args) {
-        Manager mg = new Manager("Alice", 80000);
+        Employee mg = new Manager("Alice", 80000);
 
-        Developer dl = new Developer("Bob", 60000);
+        Employee dl = new Developer("Bob", 60000);
 
         printEmployeeDetails(mg);
         printEmployeeDetails(dl);
