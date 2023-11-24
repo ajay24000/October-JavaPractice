@@ -1,13 +1,12 @@
-package com.scrapping.nzipo;
+package com.exercise1.Exercise1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NzIpoApplication {
+public class Exercise1Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NzIpoApplication.class, args);
+		SpringApplication.run(Exercise1Application.class, args);
 	}
-
 }
